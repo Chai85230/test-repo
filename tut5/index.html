@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="title" title="shhhhhh">Registration form</h1>
+    <form action="main.py">
+        <fieldset>
+            <div class="fir">
+                <label for=""></label><input type="text" value="chaitu" disabled>
+                <label for="fn">First Name: <sup class="re">*</sup></label>
+                <input type="text" id="fn" placeholder="enter first name" required>
+                <label for="ln">Last Name:</label>
+                <input type="text" id="ln" placeholder="enter last name">
+            </div>
+            <br>
+            <div>
+                <label for="em">Email:</label>
+                <input type="email" id="em" placeholder="enter email">
+            </div><br>
+            <div>
+                <label for="pws">Password</label>
+                <input type="text" id="pws" placeholder="enter your password" minlength="8">
+            </div><br>
+            <div>
+                <label for="dob">Date of birth:</label>
+                <input type="Date" id="dob">
+            </div><br>
+            <div>
+                <label for="mn">mobile number:</label>
+                <input type="number" id="mn" placeholder="enter mobile number">
+            </div><br>
+            <div>
+                <label>Choose your Gender</label>
+                <input type="radio" name="gender" id="M" value="male"><label for="M">Male</label>
+                <input type="radio" name="gender" id="F" value="female"><label for="F">Female</label>
+            </div><br>
+            <div>
+                <label>Languages Known</label>
+                <input type="checkbox" name="English" id="en" value="English"><label for="en">English</label>
+                <input type="checkbox" name="Telugu" id="te" value="Telugu"><label for="te">Telugu</label>
+                <input type="checkbox" name="Hindi" id="hi" value="hindi"><label for="hi">Hindi</label>
+            </div><br>
+            <div>
+                <label for="">Qualification</label>
+                <select name="" id="">
+                    <option value="">Please select</option>
+                    <option value="btech">btech</option>
+                    <option value="BE">BE</option>
+                    <option value="Mtech">Mtech</option>
+                </select>
+            </div><br>
+            <div>
+                <legend>someting</legend>
+                <label for="">Subjects</label>
+                <select name="" id="">
+                    <option value="">Please select</option>
+                    <option value="english">english</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="physics">physics</option>
+                    <option value="ENG Mechanics">ENG Mechanicss</option>
+                    <option value="Eng Drawing">Eng Drawing</option>
+                    <option value="DBMS">DBMS</option>
+                    <option value="Computer networking">Computer Networking</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="">Subjects</label>
+                <select name="" id="" multiple size="4">
+                    <option value="">Please select</option>
+                    <optgroup label="common:">
+                        <option value="english">english</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="physics">physics</option>
+                    </optgroup>
+                   
+                    <optgroup label="Mech:">
+                        <option value="ENG Mechanics">ENG Mechanicss</option>
+                        <option value="Eng Drawing">Eng Drawing</option>
+                    </optgroup>
+                    <optgroup label="CSE">
+                        <option value="DBMS">DBMS</option>
+                        <option value="Computer networking">Computer Networking</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Feedback</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div><br>
+            <div>
+                <p>choose your sports</p>
+                <input type="text" list="sports">
+                <datalist id="sports">
+                    <option value="cricket">Cricket</option>
+                    <option value="vollyball">Vollyball</option>
+                    <option value="football">Football</option>
+                </datalist>
+            </div>
+            <button>submit</button>
+            <button>reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>

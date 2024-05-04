@@ -1,0 +1,50 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+#oddeven{
+    position: absolute;
+    top: 10px;
+    color: brown;
+    font-size: 30px;
+}
+#counter{
+    background-color: aqua;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    font-size: 50px;
+}
+button
+{
+    color: black;
+    background-color: green;
+    font-size: larger;
+    border-radius: 10px;
+
+}
+.dark
+{
+    background-color: black;
+    color: white;
+}
+#btn
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#cr
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

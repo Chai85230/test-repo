@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+        <button id="btn" onclick="mode()">dark</button>
+        
+    <div id="cr">
+        <select onclick="color(this.value)" id="cr">
+            <option value="choose color">choose color</option>
+            <option value="28a745">green</option>
+            <option value="ff9933">orange</option>
+            <option value="007bff">blue</option>
+            <option value="ffc107">yellow</option>
+        </select>
+    </div>
+    <div id="oddeven">
+        <p id="oddeven">even</p>
+    </div>
+    <div id="counter">
+        <p id="count">0</p>
+        <div class="buttons">
+            <button onclick=incr()>+</button>
+            <button onclick=decr()>-</button>
+            <button onclick=reset()>0</button>
+        </div>
+    </div>
+   
+    
+    <script src="./script.js"></script>
+</body>
+</html>
