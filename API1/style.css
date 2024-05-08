@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+header p{
+    font-size: 28px;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.recep img{
+    height: 250px;
+    width: 250px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.recep{
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 2px solid black;
+    width: 270px;
+    box-shadow: 1px 10px 15px -3px;
+    position: sticky
+}
+.recep p,h4{
+    text-align: center;
+}
+button{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(240, 233, 233);
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    left: 25px;
+}
+.instruction{
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    z-index: 2;
+    background-color: black;
+    padding: 50px;
+    color: white;
+    transition: all 3s ease;
+}
+.hidden{
+    display: none;
+}
+

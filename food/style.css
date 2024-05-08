@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0px 20px;
+}
+header p{
+    font-size: 22px;
+}
+header h1{
+    padding-left: 630px;
+}
+#tiffin
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+.tiffin1 img{
+    height: 200px;
+    width: 200px;
+}
+.tiffin1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+.modal{
+    position: fixed;
+    top: 40vh;
+    left: 40vw;
+    z-index: 2;
+    background-color: black;
+    padding: 50px;
+    color: white;
+    transition: all 3s ease;
+}
+.hidden{
+    display: none;
+}
+.modal1
+{
+    position: fixed;
+    top: 40vh;
+    left: 40vw;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    transition: all 3s ease;
+}
+.hidden1
+{
+    display: none;
+}
