@@ -1,5 +1,5 @@
 const maindiv=document.getElementById('main')
-const subdiv=document.getElementsByClassName('instruction')[0]
+const subdiv=document.getElementsByClassName('para')[0]
 function receipe()
 {
     fetch('https://dummyjson.com/recipes')
@@ -27,14 +27,11 @@ function displayData(res2)
         btn1.textContent="REMOVE"
         const btn2=document.createElement('button')
         btn2.textContent="HOW TO MAKE"
-        const p1=document.createElement('p')
-        p1.textContent=re.instructions
         btn.addEventListener('click',incr)
         btn1.addEventListener('click',decr)
-        btn2.addEventListener('click',how)
+        btn2.addEventListener('click',() => how(re))
         div.append(image,p,h,btn,btn1,btn2)
         maindiv.appendChild(div)
-        subdiv.appendChild(p1)
     })
 }
 const count=document.getElementById('count')
@@ -50,14 +47,18 @@ function decr()
             count.textContent=--c;
         }
 }
-
-function how()
+function how(r)
 {
-   const a=document.getElementsByClassName('instruction')[0]
-   a.classList.remove('hidden')
+   const a=document.getElementsByClassName('instruction')[0].classList.remove('hidden')
+   const p1=document.createElement('p')
+   p1.textContent=r.instructions
+   subdiv.appendChild(p1)
+   
 }
+
 document.getElementById('close').addEventListener('click',close)
 function close()
 {
     document.getElementsByClassName('instruction')[0].classList.add('hidden')
+    subdiv.textContent=' '
 }

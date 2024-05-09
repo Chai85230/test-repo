@@ -46,7 +46,7 @@ button{
     left: 25px;
 }
 .instruction{
-    position: absolute;
+    position: fixed;
     top: 40vh;
     left: 40vw;
     z-index: 2;
@@ -54,8 +54,13 @@ button{
     padding: 50px;
     color: white;
     transition: all 3s ease;
+    width: 300px;
 }
 .hidden{
     display: none;
+}
+.para{
+    height: 250px;
+    width: 200px;
 }
 
